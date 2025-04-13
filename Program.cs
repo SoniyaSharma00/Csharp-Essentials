@@ -10,7 +10,7 @@ namespace Csharp_Syntax
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HELLO STUDENTS!");
+            Console.WriteLine("HELLO!");
             Console.WriteLine("Hello How are you?");
         }
     }
