@@ -22,7 +22,9 @@ namespace Csharp_Syntax
             Console.WriteLine(5); //this is an integer data type which is encoded with no cotes because it is a number.
             Console.WriteLine(10.56790754m); //this is a decimal data type(floating type) which is used when when there is 28-29 digits.(m for decimal)
             Console.WriteLine(5.5f); //this is a float data type which is used when there is 6-9 digits.( for float)
-            Console.WriteLine(5.5); //this is a double data type(floating type) which is used when there is 15-17 digits.(nothind or d for double)
+            Console.WriteLine(5.5); //this is a double data type(floating type) which is used when there is 15-17 digits.(nothing or d for double)
+            Console.WriteLine(true); //this is a boolean data type which is used when there is only two values true or false.(for true)
+            Console.WriteLine(false); //this is a boolean data type which is used when there is only two values true or false.(for false)
 
         }
     }
