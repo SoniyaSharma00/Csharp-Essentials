@@ -11,7 +11,7 @@ namespace Csharp_Syntax
         static void Main(string[] args)
         {
             Console.WriteLine("HELLO!");
-            Console.WriteLine("Hello How are you?");
+            Console.WriteLine("Hello How are you?"); //This is the syntax for output in C#.
         }
     }
 }
