@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,18 @@ namespace Csharp_Syntax
             Console.WriteLine(5.5); //this is a double data type(floating type) which is used when there is 15-17 digits.(nothing or d for double)
             Console.WriteLine(true); //this is a boolean data type which is used when there is only two values true or false.(for true)
             Console.WriteLine(false); //this is a boolean data type which is used when there is only two values true or false.(for false)
+
+            //now we will learn about the variables in C#
+            int a; //here we created a new variable of type int with the name a.From now on this variable can only hold integer values
+            a = 5; //here we assigned the value 5 to the variable a.this is a set operator
+            Console.WriteLine(a); //this will print the value of a which is 5.This is a get operator.
+            a = 10; //here we assigned the value 10 to the variable a.this is reassigning the variale.
+            Console.WriteLine(a); //this will print the value of a which is 10.
+            string useroption = "yes";
+            Console.WriteLine(useroption); // assigning and retriving the valus can also be done in one line. here we have used string data type.
+
+
+
 
         }
     }
