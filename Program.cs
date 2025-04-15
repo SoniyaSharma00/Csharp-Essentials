@@ -36,6 +36,11 @@ namespace Csharp_Syntax
             string useroption = "yes";
             Console.WriteLine(useroption); // assigning and retriving the valus can also be done in one line. here we have used string data type.
 
+            //implicitely typing the variable
+            var b = 5; //here we created a new variable of type int with the name b and assigned the value 5 to it. compiler will automatically detect the type of the variable without exactly mentoning it in the code.
+            Console.WriteLine(b); //this will print the value of b which is 5. From now on the variable b can only hold integer values.
+
+
 
 
 
