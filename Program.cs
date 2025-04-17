@@ -18,6 +18,7 @@ namespace Csharp_Syntax
             Console.Write(" for students"); //hence Console.Write prints the next output in the same line.
 
             //now here are some examples on the data types in C#
+
             Console.WriteLine('b'); //this is a  character data type which is encoded with single cote because it is a literal.
             Console.WriteLine("Hello"); //this is a string data type which is encoded with double cote because it is a string.
             Console.WriteLine(5); //this is an integer data type which is encoded with no cotes because it is a number.
@@ -28,6 +29,7 @@ namespace Csharp_Syntax
             Console.WriteLine(false); //this is a boolean data type which is used when there is only two values true or false.(for false)
 
             //now we will learn about the variables in C#
+
             int a; //here we created a new variable of type int with the name a.From now on this variable can only hold integer values
             a = 5; //here we assigned the value 5 to the variable a.this is a set operator
             Console.WriteLine(a); //this will print the value of a which is 5.This is a get operator.
@@ -36,9 +38,26 @@ namespace Csharp_Syntax
             string useroption = "yes";
             Console.WriteLine(useroption); // assigning and retriving the valus can also be done in one line. here we have used string data type.
 
-            //implicitely typing the variable
+            //implicitely typing the variable.
+            //it should always be initialized to use in a single line.
+
             var b = 5; //here we created a new variable of type int with the name b and assigned the value 5 to it. compiler will automatically detect the type of the variable without exactly mentoning it in the code.
             Console.WriteLine(b); //this will print the value of b which is 5. From now on the variable b can only hold integer values.
+
+            //Now we will learn about the escape sequences in C#
+
+            Console.WriteLine("Hello \n How are you?"); //this will print Hello in the first line and How are you? in the second line.
+            Console.WriteLine("Hello \t How are you?"); //this will print Hello in the first line and How are you? with a tab space.
+            Console.WriteLine("Hello \"world\""); //this will print Hello "world" with double quotes.
+            Console.WriteLine("c:\\source\\repos"); //this will print c:\source\repos with a single backslash.
+
+            //Here is an example of character escape sequence.
+
+            Console.WriteLine("Generating invoice for customer \"Contoso crop\" ...\n");
+            Console.WriteLine("Invoice number: 123456\t\tComplete!");
+            Console.WriteLine("Invoice date: 01/01/2023\tTotal amount: $100.00");
+            Console.WriteLine("\nOutput Directory: C:\\Invoices\\2023\\01\\01");
+
 
 
 
