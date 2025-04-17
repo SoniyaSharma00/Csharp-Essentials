@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Csharp_Syntax
@@ -58,7 +59,15 @@ namespace Csharp_Syntax
             Console.WriteLine("Invoice date: 01/01/2023\tTotal amount: $100.00");
             Console.WriteLine("\nOutput Directory: C:\\Invoices\\2023\\01\\01");
 
+            //Verbatim string literal
 
+            Console.WriteLine(@"        Hello!..
+             (who are you?)"); //A verbatim string is a type of string in C# that keeps the text exactly how you write it — including spaces, new lines, and backslashes.
+
+            //unicode escape character
+
+            // Kon'nichiwa World
+            Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");//we  can also add encoded characters in literal strings using the \u escape sequence, then a four-character code representing some character in Unicode (UTF-16).
 
 
 
