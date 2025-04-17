@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -69,8 +70,25 @@ namespace Csharp_Syntax
             // Kon'nichiwa World
             Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");//we  can also add encoded characters in literal strings using the \u escape sequence, then a four-character code representing some character in Unicode (UTF-16).
 
+            //string concatination 
 
+            string firstname = "John";
+            string username = "Doe";
+            Console.WriteLine(username + " " + firstname); //this will print John Doe with a space in between.
+            Console.WriteLine("Hello " + firstname + " " + username); //this will print Hello John Doe with a space in between.
 
+            //String Interpolation
+
+            int version = 11;
+            string updateText = "Update your windows to";
+            String message = $"hello ! {updateText} {version}";
+            Console.WriteLine(message); //this will print hello ! Update your windows to 11 with a space in between.
+
+            //Combine verbatim literals and string interpolation
+            string projectName = "Csharp Syntax";
+            Console.WriteLine($@"c:\{projectName}\source\repos"); //this will print c:\Csharp Syntax\source\repos with a single backslash.
+
+            Console.WriteLine("\"");
 
         }
     }
