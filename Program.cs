@@ -88,7 +88,55 @@ namespace Csharp_Syntax
             string projectName = "Csharp Syntax";
             Console.WriteLine($@"c:\{projectName}\source\repos"); //this will print c:\Csharp Syntax\source\repos with a single backslash.
 
-            Console.WriteLine("\"");
+            //basic math operations
+
+            int sum = 7 + 5;
+            int difference = 7 - 5;
+            int product = 7 * 5;
+            int quotient = 7 / 5;
+
+            Console.WriteLine("Sum: " + sum);
+            Console.WriteLine("Difference: " + difference);
+            Console.WriteLine("Product: " + product);
+            Console.WriteLine("Quotient: " + quotient);
+
+            //code to cast results of integer division
+            int first = 7;
+            int second = 5;
+            decimal q = (decimal)first / (decimal)second;
+            Console.WriteLine(q);
+
+            //code to determine the remainder after integer division
+            Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+            Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
+
+
+            //order of operations
+            //The order of operations in C# is the same as in mathematics. The order of operations is as follows:PEMDAS
+            //1. Parentheses
+            //2. Exponents
+            //3. Multiplication and Division
+            //4. Addition and Subtraction
+            int value1 = 3 + 4 * 5;
+            int value2 = (3 + 4) * 5;
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+
+            //increment and decrement operators. if you use the operator before the value as in ++value, then the increment will happen before the value is retrieved. 
+            //Likewise, value++ will increment the value after the value has been retrieved.
+            int value3 = 0;     // value is now 0.
+            value3 = value3 + 5; // value is now 5.
+            value3 += 5;        // value is now 10.
+
+            //In other way,
+            int value4 = 0;     // value is now 0.
+            value4 = value4 + 1; // value is now 1.
+            value4++;           // value is now 2.
+
+            //Challenge: Calculate Celsius given the current temperature in Fahrenheit
+            int fahrenheit = 94;
+            decimal celsius = (fahrenheit - 32) * 5 / 9m;
+            Console.WriteLine("the temperature is " + celsius + " Celsius");
 
         }
     }
